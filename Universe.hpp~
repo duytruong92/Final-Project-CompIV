@@ -1,0 +1,17 @@
+#ifdef UNIVERSE_HPP
+
+#include "SpaceObject.hpp"
+#include "Body.hpp"
+#include "Star.hpp"
+
+class Universe {
+private:
+	sf::Vector2f force;
+	sf::WindowRender Window;
+	sf::Vector2f size;
+public:
+	Universe();
+	sf::Vector2f force(Body p1, Body p2);
+    void running();
+
+}
